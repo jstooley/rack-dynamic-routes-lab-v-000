@@ -8,7 +8,7 @@ class Application
 
        item_name = req.path.split("/").last
        item = @@items.find{|i| i.name == item_name}
-       binding.pry
+       
 
        if item !=nil
          resp.write item.price
